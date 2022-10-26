@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="左昊麟" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="左昊麟">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/python/ZuoHaolin/MMIN-master/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/python/ZuoHaolin/MISA" local="$PROJECT_DIR$/../MISA" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/checkpoints" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/data" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/logs" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/shared_出度不为384" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/.gitignore" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/.nfs000000002452833d00000004" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/08.LOG" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/09.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/10.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/changecom_10.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/changecom_11.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/changecom_12.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/changecom_13.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/changecom_14.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/MISA.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/mmin_5.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/nocycle_1.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/nocycle_2.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/nocycle_3.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/nocycle_4.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/nocycle_5.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/nocycle_6.log" />
+            <excludedPath path="/python/ZuoHaolin/MMIN-master/shared" />
+            <excludedPath path="/python/ZuoHaolin/MISA" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

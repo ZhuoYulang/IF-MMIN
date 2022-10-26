@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ae39ba56-f4a0-4e2d-97bf-c7ce368455cd" name="左昊麟">
+        <fileTransfer rootFolder="/home/GaoGuanglai/ZuoHaolin_81" accessType="SFTP" host="183.175.12.81" port="22" sshConfigId="64eb82c7-b0b8-407c-879e-bc67eb7bdda3" sshConfig="ZuoHaolin_81@183.175.12.81:22 password">
+          <advancedOptions>
+            <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
