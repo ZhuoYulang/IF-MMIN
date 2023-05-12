@@ -65,6 +65,21 @@ def eval(model, val_iter, is_save=False, phase='test', epoch=-1):
         np.save(os.path.join(save_dir, '{}_label.npy'.format(phase)), total_label)
 
         # save part results
+        for part_name in ['azz', 'zvz', 'zzl', 'avz', 'azl', 'zvl']:
+            part_index = np.where(total_miss_type == part_name)
+            part_pred = total_pred[part_index]
+            part_label = total_label[part_index]
+            acc_part = accuracy_score(part_label, part_pred)
+            uar_part = recall_score(part_label, part_pred, average='macro')
+            f1_part = f1_score(part_label, part_pred, average='macro')
+            np.save(os.path.join(save_dir, '{}_{}_pred.npy'.format(phase, part_name)), part_pred)
+            np.save(os.path.join(save_dir, '{}_{}_label.npy'.format(phase, part_name)), part_label)
+            if phase == 'test':
+                recorder_lookup[part_name].write_result_to_tsv({
+                    'acc': acc_part,
+                    'uar': uar_part,
+                    'f1': f1_part
+                }, cvNo=opt.cvNo)
 
     model.train()
 
