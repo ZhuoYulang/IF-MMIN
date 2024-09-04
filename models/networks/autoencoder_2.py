@@ -142,7 +142,7 @@ class ResidualAE(nn.Module):
             x_out = decoder(latent)
             latents.append(latent)
         latents = torch.cat(latents, dim=-1)
-        return self.transition(x_in+x_out), latents
+        return self.transition(x_out), latents
 
 
 class DefineAE(nn.Module):
