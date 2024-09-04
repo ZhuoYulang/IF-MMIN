@@ -131,13 +131,13 @@ class ResidualAE(nn.Module):
 
     
     def forward(self, x, shared):
-        x_in = x
-        x_out = shared
+        x_in = shared
+        x_out = x
         latents = []
         for i in range(self.n_blocks):
             encoder = getattr(self, 'encoder_' + str(i))
             decoder = getattr(self, 'decoder_' + str(i))
-            x_in = x_in + shared # x_out
+            x_in = x_out + shared # x_out
             latent = encoder(x_in)
             x_out = decoder(latent)
             latents.append(latent)
